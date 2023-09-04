@@ -2,4 +2,6 @@ function direBonjour() {
     alert("Bienvenue chez moi");
 }
 
-direBonjour() 
+direBonjour()
+
+let prenom = "mathis";
