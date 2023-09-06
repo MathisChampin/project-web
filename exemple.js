@@ -1,12 +1,25 @@
-function Utilisateur(n, a, m) {
-    this.name = n;
-    this.age = a;
-    this.mail = m;
-}
+document.getElementById("Formulaire").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-let mathis = new Utilisateur("Mathis Champin", 30, "mathis.champin@epitech.eu");
-let pierre = new Utilisateur("Pierre gardaut", 35, "pierregardau@epitech.eu");
+    var erreur;
+    var inputs = document.getElementsByTagName("input");
 
-document.getElementById("p1").innerHTML = "Nom: " + mathis.name;
-document.getElementById("p2").innerHTML = "Age: " + mathis.age;
-document.getElementById("p3").innerHTML = "Mail: " + mathis.mail;
+    for (var i = 0; i < inputs.length; i++) {
+        if (!inputs[i].value) {
+            erreur = "Veuillez renseigner tout les champs";
+        }
+    }
+    if (erreur) {
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML = erreur;
+        return false
+    }
+    else {
+        alert("Formulaire envoyé !");
+    }
+});
+
+const doneButton = document.createElement("button");
+doneButton.innerHTML= '<i class="fas fa-check"></i>';
+doneButton.classList.add("done-button");
+todoDiv.appendChild(doneButton);
