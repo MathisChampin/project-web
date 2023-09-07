@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire</title>
+    <script src="exemple.js" async></script>
 </head>
 <body>
-    <h1>Hello WORLD</h1>
-    <script src="exemple.js"></script>
+    <h1>Gestion des employés</h1>
+    <form id="Formulaire">
+        <input type="text" name="name" placeholder="Nom Prénom" id="name"><br>
+        <input type="type" name="type" placeholder="Type" id="type"><br>
+        <input type="mail" name="mail" placeholder="Mail" id="mail"><br>
+        <input type="telephone" name="telephone" placeholder="Téléphone" id="telephone"><br>
+        <input type="telephone_ecole" name="telephone-ecole" placeholder="Téléphone école" id="telephone_ecole"><br>
+        <input type="date_debut" name="date_debut" placeholder="Date de début" id="date_debut"><br>
+        <input type="date_fin" name="date_fin" placeholder="Date de fin" id="date_fin"><br>
+        <input type="statut" name="statut" placeholder="Statut" id="statut"><br>
+        <input type="submit" value="Inscription">
+    </form>
+    <p style="color: red;" id="erreur"></p>
 </body>
 </html>
