@@ -4,5 +4,3 @@ function direBonjour() {
 direBonjour()
 
 
-let prenom = "mathis";
-var nom = "philbert";
